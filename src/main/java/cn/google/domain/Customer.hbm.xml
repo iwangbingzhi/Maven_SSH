@@ -1,0 +1,13 @@
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="cn.google.domain.Customer" table="c_table">
+		<id name="custId" type="java.lang.String">
+			<column name="id" length="32" />
+			<generator class="uuid" />
+		</id>
+		<property name="custName" column="custName"/>
+
+		<property name="address" column="address"/>
+	</class>
+</hibernate-mapping>
